@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hestia-hkc"
+version = "1.0.0"
+description = "Hestia Knowledge Core — AI-native knowledge system"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "SnowFoxHQ"}]
+keywords = ["knowledge-graph", "llm", "rag", "3d-visualization", "ai-native"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "networkx>=3.0",
+    "numpy>=1.26",
+    "rank-bm25>=0.2",
+    "aiofiles>=23.0",
+    "requests>=2.31",   # web_loader(URL摄入) / SDK http_client / TEI embedding 后端都直接用到
+]
+
+[project.optional-dependencies]
+# 真实语义向量(生产推荐);缺失时 HKC 自动降级 stub
+embeddings = ["sentence-transformers>=2.0", "faiss-cpu>=1.7"]
+# HTTP API 服务(含文件上传:python-multipart,PDF:PyMuPDF,电子书:ebooklib/bs4/mobi)
+api = ["fastapi>=0.110", "uvicorn>=0.29", "python-multipart>=0.0.9", "pymupdf>=1.24",
+       "ebooklib>=0.18", "beautifulsoup4>=4.12", "mobi>=0.3.3"]
+# 真实 LLM 知识抽取:anthropic(Claude)/ openai(DeepSeek、OpenAI、本地兼容模型)
+llm = ["anthropic>=0.40", "openai>=1.40"]
+all = ["sentence-transformers>=2.0", "faiss-cpu>=1.7", "fastapi>=0.110", "uvicorn>=0.29",
+       "python-multipart>=0.0.9", "pymupdf>=1.24", "ebooklib>=0.18", "beautifulsoup4>=4.12",
+       "mobi>=0.3.3", "anthropic>=0.40", "openai>=1.40"]
+
+[project.urls]
+Homepage = "https://github.com/SnowFoxHQ/hestia-hkc"
+Repository = "https://github.com/SnowFoxHQ/hestia-hkc"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["hkc_*"]
+
+[tool.setuptools.package-data]
+"*" = ["*.md", "*.json"]   # 含 hkc_ace/skill_taxonomy.json(能力定义配置)

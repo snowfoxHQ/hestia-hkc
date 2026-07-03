@@ -1,0 +1,86 @@
+# ============================================================
+#  HKC (Hestia Knowledge Core) — .gitignore
+# ============================================================
+
+# ── Python ──
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+.eggs/
+build/
+dist/
+*.egg-link
+
+# ── 虚拟环境 ──
+.venv/
+venv/
+env/
+ENV/
+
+# ── 知识库数据（用户数据 + SQLite，勿入库；hkc.db 可达数百 MB）──
+#    运行时自动生成，首次启动即重建，无需随仓库
+hkc_data/
+hkc_data_*/
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+
+# ── ACE 编译产物（.hkap 能力包，运行时生成）──
+*.hkap
+
+# ── 密钥 / 环境变量（绝不入库）──
+.env
+.env.*
+*.key
+secrets*.json
+
+# ── 测试 / 类型 / lint 缓存 ──
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+
+# ── 日志 / 临时 / 备份 ──
+*.log
+*.bak
+*.tmp
+tmp/
+
+# ── 模型权重缓存（sentence-transformers 等本地模型，勿入库）──
+models/
+*.safetensors
+
+# ── IDE / 编辑器 ──
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Claude Code 本机配置（工具态，开源不随仓库）──
+.claude/
+
+# ── 内部文档（含本机特定/私有系统内容，不发公开仓库）──
+CLAUDE.md
+docs/ACCEPTANCE.md
+docs/ingest-progress-design.md
+docs/semantic-dedup-design.md
+scripts/acceptance_real_llm.py
+
+# ── 操作系统 ──
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Node（若前端将来引入构建）──
+node_modules/
+
+# ============================================================
+#  刻意【保留】入库的，勿加入忽略：
+#    - hkc-ui/vendor/*.js               Three.js 本地离线打包，必须随仓库
+#    - src/hkc_ace/skill_taxonomy.json  ACE 能力定义配置
+# ============================================================

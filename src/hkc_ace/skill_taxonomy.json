@@ -1,0 +1,465 @@
+{
+  "quant_analyst": {
+    "display_name": "量化分析师",
+    "domain": "Investment",
+    "required_skills": [
+      "factor_investing",
+      "backtesting",
+      "risk_management",
+      "portfolio_opt",
+      "data_analysis"
+    ],
+    "optional_skills": [
+      "macro_analysis",
+      "alt_data"
+    ],
+    "min_coverage": 0.6,
+    "workflows": [
+      {
+        "name": "量化投资主流程",
+        "steps": [
+          "factor_investing",
+          "backtesting",
+          "risk_management",
+          "portfolio_opt"
+        ]
+      }
+    ],
+    "concept_checklist": {
+      "factor_investing": [
+        "alpha factor",
+        "beta exposure",
+        "factor model",
+        "momentum",
+        "value factor",
+        "quality factor"
+      ],
+      "backtesting": [
+        "historical simulation",
+        "walk-forward",
+        "overfitting",
+        "transaction cost",
+        "slippage"
+      ],
+      "risk_management": [
+        "VaR",
+        "drawdown",
+        "sharpe ratio",
+        "position sizing",
+        "stop loss"
+      ],
+      "portfolio_opt": [
+        "mean-variance",
+        "efficient frontier",
+        "diversification",
+        "rebalancing"
+      ],
+      "data_analysis": [
+        "time series",
+        "cross-sectional",
+        "data cleaning",
+        "feature engineering",
+        "statistical testing"
+      ]
+    }
+  },
+  "value_investor": {
+    "display_name": "价值投资者",
+    "domain": "Investment",
+    "required_skills": [
+      "fundamental_analysis",
+      "valuation",
+      "moat_analysis",
+      "financial_statement"
+    ],
+    "optional_skills": [
+      "macro_analysis",
+      "behavioral_finance"
+    ],
+    "min_coverage": 0.65,
+    "workflows": [
+      {
+        "name": "价值投资主流程",
+        "steps": [
+          "fundamental_analysis",
+          "moat_analysis",
+          "valuation",
+          "margin_of_safety"
+        ]
+      }
+    ],
+    "concept_checklist": {
+      "fundamental_analysis": [
+        "revenue growth",
+        "profit margin",
+        "ROE",
+        "ROIC",
+        "competitive advantage"
+      ],
+      "valuation": [
+        "P/E ratio",
+        "P/B ratio",
+        "DCF",
+        "intrinsic value",
+        "margin of safety"
+      ],
+      "moat_analysis": [
+        "economic moat",
+        "network effect",
+        "switching cost",
+        "brand value",
+        "cost advantage"
+      ],
+      "financial_statement": [
+        "income statement",
+        "balance sheet",
+        "cash flow",
+        "free cash flow",
+        "debt ratio"
+      ]
+    }
+  },
+  "ai_architect": {
+    "display_name": "AI 架构师",
+    "domain": "Engineering",
+    "required_skills": [
+      "llm_fundamentals",
+      "rag_design",
+      "agent_design",
+      "system_design"
+    ],
+    "optional_skills": [
+      "fine_tuning",
+      "evaluation"
+    ],
+    "min_coverage": 0.55,
+    "workflows": [
+      {
+        "name": "AI 系统设计流程",
+        "steps": [
+          "requirements",
+          "llm_fundamentals",
+          "rag_design",
+          "agent_design",
+          "system_design"
+        ]
+      }
+    ],
+    "concept_checklist": {
+      "llm_fundamentals": [
+        "transformer",
+        "attention",
+        "tokenization",
+        "prompt engineering",
+        "context window"
+      ],
+      "rag_design": [
+        "chunking",
+        "embedding",
+        "vector search",
+        "retrieval",
+        "reranking"
+      ],
+      "agent_design": [
+        "tool use",
+        "planning",
+        "memory",
+        "multi-agent",
+        "orchestration"
+      ],
+      "system_design": [
+        "scalability",
+        "latency",
+        "reliability",
+        "API design",
+        "monitoring"
+      ]
+    }
+  },
+  "psychology_expert": {
+    "display_name": "心理学专家",
+    "domain": "Psychology",
+    "required_skills": [
+      "cognitive_bias",
+      "behavioral_psychology",
+      "social_influence",
+      "decision_making"
+    ],
+    "optional_skills": [
+      "neuroscience",
+      "therapy_methods"
+    ],
+    "min_coverage": 0.6,
+    "workflows": [
+      {
+        "name": "行为分析流程",
+        "steps": [
+          "cognitive_bias",
+          "decision_making",
+          "social_influence",
+          "behavioral_psychology"
+        ]
+      }
+    ],
+    "concept_checklist": {
+      "cognitive_bias": [
+        "confirmation bias",
+        "anchoring",
+        "availability heuristic",
+        "dunning-kruger",
+        "loss aversion"
+      ],
+      "behavioral_psychology": [
+        "operant conditioning",
+        "classical conditioning",
+        "reinforcement",
+        "habit formation"
+      ],
+      "social_influence": [
+        "social proof",
+        "authority",
+        "reciprocity",
+        "scarcity",
+        "commitment"
+      ],
+      "decision_making": [
+        "prospect theory",
+        "expected utility",
+        "bounded rationality",
+        "mental models"
+      ]
+    }
+  },
+  "writing_expert": {
+    "display_name": "写作专家",
+    "domain": "写作",
+    "domains": [
+      "公文写作",
+      "写作",
+      "写作方法论",
+      "写作技巧",
+      "写作方法",
+      "公文",
+      "行政管理"
+    ],
+    "required_skills": [
+      "公文格式",
+      "谋篇布局",
+      "语言表达",
+      "行文规范"
+    ],
+    "optional_skills": [
+      "文风修辞"
+    ],
+    "min_coverage": 0.5,
+    "workflows": [
+      {
+        "name": "公文写作主流程",
+        "steps": [
+          "谋篇布局",
+          "公文格式",
+          "语言表达",
+          "行文规范"
+        ]
+      }
+    ],
+    "concept_checklist": {
+      "公文格式": [
+        "公文",
+        "格式",
+        "请示",
+        "报告",
+        "通知",
+        "纪要",
+        "函"
+      ],
+      "谋篇布局": [
+        "结构",
+        "布局",
+        "提纲",
+        "开头",
+        "结尾",
+        "逻辑",
+        "层次"
+      ],
+      "语言表达": [
+        "语言",
+        "措辞",
+        "表达",
+        "句子",
+        "用词",
+        "简洁"
+      ],
+      "行文规范": [
+        "规范",
+        "标题",
+        "落款",
+        "行文",
+        "称谓",
+        "格式"
+      ],
+      "文风修辞": [
+        "修辞",
+        "文风",
+        "比喻",
+        "排比",
+        "生动"
+      ]
+    }
+  },
+  "psych_social_expert": {
+    "display_name": "心理与人际专家",
+    "domain": "心理学",
+    "domains": [
+      "心理学",
+      "人际关系",
+      "社会学",
+      "认知科学",
+      "行为科学"
+    ],
+    "required_skills": [
+      "认知心理",
+      "人际沟通",
+      "社会影响",
+      "行为决策"
+    ],
+    "optional_skills": [
+      "情绪管理"
+    ],
+    "min_coverage": 0.5,
+    "workflows": [
+      {
+        "name": "行为与人际分析流程",
+        "steps": [
+          "认知心理",
+          "行为决策",
+          "社会影响",
+          "人际沟通"
+        ]
+      }
+    ],
+    "concept_checklist": {
+      "认知心理": [
+        "认知",
+        "情绪",
+        "记忆",
+        "动机",
+        "意识",
+        "心理",
+        "感知"
+      ],
+      "人际沟通": [
+        "沟通",
+        "人际",
+        "关系",
+        "倾听",
+        "说服",
+        "共情",
+        "交往"
+      ],
+      "社会影响": [
+        "社会",
+        "群体",
+        "从众",
+        "权威",
+        "影响",
+        "角色",
+        "规范"
+      ],
+      "行为决策": [
+        "行为",
+        "决策",
+        "习惯",
+        "偏见",
+        "选择",
+        "判断"
+      ],
+      "情绪管理": [
+        "情绪",
+        "焦虑",
+        "压力",
+        "调节",
+        "自我"
+      ]
+    }
+  },
+  "humanities_expert": {
+    "display_name": "文史哲专家",
+    "domain": "历史",
+    "domains": [
+      "历史",
+      "历史地理",
+      "文学",
+      "文学分析",
+      "哲学",
+      "宗教",
+      "政治",
+      "人物评价"
+    ],
+    "required_skills": [
+      "历史脉络",
+      "文学赏析",
+      "哲学思辨",
+      "人物评析"
+    ],
+    "optional_skills": [
+      "地理考证"
+    ],
+    "min_coverage": 0.5,
+    "workflows": [
+      {
+        "name": "文史研究流程",
+        "steps": [
+          "历史脉络",
+          "人物评析",
+          "文学赏析",
+          "哲学思辨"
+        ]
+      }
+    ],
+    "concept_checklist": {
+      "历史脉络": [
+        "历史",
+        "朝代",
+        "事件",
+        "年代",
+        "王朝",
+        "战争",
+        "变革"
+      ],
+      "文学赏析": [
+        "文学",
+        "作品",
+        "作者",
+        "小说",
+        "诗歌",
+        "叙事",
+        "文本"
+      ],
+      "哲学思辨": [
+        "哲学",
+        "思想",
+        "观念",
+        "理性",
+        "存在",
+        "伦理",
+        "价值"
+      ],
+      "人物评析": [
+        "人物",
+        "评价",
+        "生平",
+        "影响",
+        "贡献",
+        "评述"
+      ],
+      "地理考证": [
+        "地理",
+        "地名",
+        "疆域",
+        "考证",
+        "方位"
+      ]
+    }
+  }
+}
