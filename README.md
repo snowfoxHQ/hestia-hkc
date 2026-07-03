@@ -1,6 +1,10 @@
 # HKC 知识星球
 
 AI 原生知识系统:摄入文本/文件 → LLM 抽取结构化知识 → KEE 演化去重 → 3D 知识星球可视化 + 能力编译 + AI 综述。**模型无关**,任意 LLM(DeepSeek/Claude/OpenAI/本地)皆可接入。
+<img width="2555" height="1426" alt="屏幕截图 2026-07-03 142042" src="https://github.com/user-attachments/assets/ee9f9c29-5557-4ac0-9816-35d211deba57" />
+<img width="2557" height="1435" alt="屏幕截图 2026-07-03 142103" src="https://github.com/user-attachments/assets/b74d8a16-d830-4314-b855-ea8c2b412be3" />
+<img width="2559" height="1426" alt="屏幕截图 2026-07-03 142317" src="https://github.com/user-attachments/assets/f1fdda45-08e0-41f0-ab6e-e111d99b5e51" />
+<img width="2559" height="1431" alt="屏幕截图 2026-07-03 142337" src="https://github.com/user-attachments/assets/9ebd1c7d-0210-4303-b571-7e2c94c8e903" />
 
 ## 🚀 一键启动(推荐)
 
