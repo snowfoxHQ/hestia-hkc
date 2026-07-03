@@ -66,6 +66,7 @@ models/
 
 # ── 内部文档（含本机特定/私有系统内容，不发公开仓库）──
 CLAUDE.md
+ROADMAP_INTERNAL.md
 docs/ACCEPTANCE.md
 docs/ingest-progress-design.md
 docs/semantic-dedup-design.md
