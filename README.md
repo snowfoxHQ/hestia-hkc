@@ -69,12 +69,13 @@ source .venv/bin/activate          # Windows: .venv\Scripts\activate
 # 2. 装依赖
 pip install -e ".[all]"
 
-# 3. 配置知识抽取模型(任选其一;也可跳过,启动后在界面「连接设置」里填)
-export HKC_LLM_PROVIDER=deepseek && export DEEPSEEK_API_KEY=sk-...                 # DeepSeek(推荐)
-# export HKC_LLM_PROVIDER=anthropic && export ANTHROPIC_API_KEY=sk-ant-...          # Claude
-# export HKC_LLM_PROVIDER=openai && export OPENAI_API_KEY=sk-...                    # OpenAI
-# export HKC_LLM_PROVIDER=openai-compatible \
-#   && export HKC_LLM_BASE_URL=http://localhost:11434/v1 && export HKC_LLM_MODEL=qwen2.5   # 本地 Ollama / vLLM / LM Studio 等
+# 3. 配置知识抽取模型 —— 推荐【跳过这步】，启动后在界面「连接设置」里图形化填(最省事)。
+#    如需用环境变量，按你的终端选对应写法(下面以推荐的 DeepSeek 为例)：
+#      Linux/macOS (bash) :  export HKC_LLM_PROVIDER=deepseek; export DEEPSEEK_API_KEY=sk-...
+#      Windows PowerShell :  $env:HKC_LLM_PROVIDER="deepseek"; $env:DEEPSEEK_API_KEY="sk-..."
+#      Windows CMD        :  set HKC_LLM_PROVIDER=deepseek && set DEEPSEEK_API_KEY=sk-...
+#    换其它 provider：把 key 变量名换成对应的 —— Claude=ANTHROPIC_API_KEY、OpenAI=OPENAI_API_KEY、
+#    本地模型 provider=openai-compatible + HKC_LLM_BASE_URL + HKC_LLM_MODEL。详见下方「配置」表。
 
 # 4. 起后端(激活 venv 后统一用 python -m uvicorn,不依赖 PATH)
 python -m uvicorn hkc_api.main:app --host 127.0.0.1 --port 8000
@@ -84,7 +85,7 @@ cd hkc-ui && python -m http.server 8080
 # 浏览器打开 http://localhost:8080/index.html
 ```
 
-> Windows：`export X=Y` 换成 PowerShell 的 `$env:X="Y"` 或 CMD 的 `set X=Y`；激活 venv 后 `python` 即指向 venv 内解释器。
+> `python -m uvicorn` / `python -m http.server` 在三种终端下写法一致；激活 venv 后 `python` 即指向 venv 内解释器，不必写全路径。
 
 ## 配置(环境变量)
 
