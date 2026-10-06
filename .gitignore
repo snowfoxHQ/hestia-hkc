@@ -52,7 +52,7 @@ htmlcov/
 tmp/
 
 # ── 模型权重缓存（sentence-transformers 等本地模型，勿入库）──
-models/
+/models/
 *.safetensors
 
 # ── IDE / 编辑器 ──
