@@ -1,5 +1,9 @@
 # HKC 知识星球
 
+[![版本](https://img.shields.io/badge/version-1.0.0-blue)](https://github.com/snowfoxHQ/hestia-hkc)
+[![许可证](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.11+-brightgreen)](https://python.org)
+
 AI 原生知识系统:摄入文本/文件 → LLM 抽取结构化知识 → KEE 演化去重 → 3D 知识星球可视化 + 能力编译 + AI 综述。**模型无关**,任意 LLM(DeepSeek/Claude/OpenAI/本地)皆可接入。
 <img width="2555" height="1426" alt="屏幕截图 2026-07-03 142042" src="https://github.com/user-attachments/assets/ee9f9c29-5557-4ac0-9816-35d211deba57" />
 <img width="2557" height="1435" alt="屏幕截图 2026-07-03 142103" src="https://github.com/user-attachments/assets/b74d8a16-d830-4314-b855-ea8c2b412be3" />
